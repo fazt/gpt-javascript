@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenAI JavaScript Example</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <p class="eyebrow">OpenAI + JavaScript</p>
+        <h1>Generate text with GPT</h1>
+        <p class="description">
+          Write a prompt and get a response from the OpenAI Responses API.
+        </p>
+
+        <form id="prompt-form">
+          <label for="prompt">Prompt</label>
+          <textarea
+            id="prompt"
+            name="prompt"
+            rows="5"
+            placeholder="Explain JavaScript closures with a simple example"
+            required
+          ></textarea>
+          <button type="submit" id="generate">Generate</button>
+        </form>
+
+        <pre id="output" aria-live="polite"></pre>
+      </section>
+    </main>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

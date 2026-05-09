@@ -1,0 +1,25 @@
+{
+  "name": "gpt-javascript",
+  "version": "2.0.0",
+  "description": "Example app that calls OpenAI from JavaScript using a small Node.js backend.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "openai",
+    "javascript",
+    "nodejs",
+    "gpt"
+  ],
+  "author": "fazt",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
