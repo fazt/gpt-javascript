@@ -20,7 +20,9 @@ npm install
 ## Run
 
 ```bash
-OPENAI_API_KEY="your-api-key" npm run dev
+cp .env.example .env
+# edit .env and set OPENAI_API_KEY
+npm run dev
 ```
 
 Open:
@@ -32,5 +34,10 @@ http://localhost:3000
 ## Optional model override
 
 ```bash
-OPENAI_MODEL="gpt-4.1-mini" OPENAI_API_KEY="your-api-key" npm start
+OPENAI_MODEL="gpt-4.1-mini" npm start
 ```
+
+## Backend endpoints
+
+- `GET /api/health` checks that the backend is running and whether an API key is configured.
+- `POST /api/generate` sends `{ "prompt": "..." }` to the backend, which calls OpenAI without exposing the API key to the browser.
